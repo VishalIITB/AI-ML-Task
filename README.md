@@ -1,56 +1,56 @@
-#Credit Card Fraud Detection
+# Credit Card Fraud Detection
 
 This project aims to detect fraudulent transactions using supervised (Logistic Regression, XGBoost) and unsupervised (Isolation Forest) machine learning models on a highly imbalanced dataset. Interpretability tools like LIME are used to explain individual predictions.
 
-##Key Choices Made
+## Key Choices Made
 
- -Data Preprocessing:
+ - Data Preprocessing:
 
     -Standardized the Amount feature.
 
     -Addressed class imbalance via stratified sampling (optional oversampling methods discussed).
 
--Model Selection:
+- Model Selection:
 
     -Supervised Models: Logistic Regression and XGBoost.
 
     -Unsupervised Model: Isolation Forest for anomaly detection.
 
--Evaluation Metrics:
+- Evaluation Metrics:
 
     -Precision, Recall, F1-Score, and Accuracy.
 
     -ROC Curve and PR Curve for visual analysis.
 
--Interpretability:
+- Interpretability:
 
     -Used LIME for model-agnostic explanation of sample predictions.
 
     -Saved .png for visual inspection on GitHub.
 
-##Visualizations
+## Visualizations
 
--Confusion Matrix for both models.
+- Confusion Matrix for both models.
 
--ROC & PR Curves to assess model performance under class imbalance.
+- ROC & PR Curves to assess model performance under class imbalance.
 
--LIME plots for selected predictions.
+- LIME plots for selected predictions.
 
-##Unsupervised Anomaly Detection (Isolation Forest)
+## Unsupervised Anomaly Detection (Isolation Forest)
 
--Trained on majority (non-fraud) class only.
+- Trained on majority (non-fraud) class only.
 
--Predicted anomalies were compared to known frauds.
+- Predicted anomalies were compared to known frauds.
 
--Detected a significant number of true positives, though with false positives.
+- Detected a significant number of true positives, though with false positives.
 
-##References
+## References
 
--Kaggle Credit Card Fraud Dataset
+- Kaggle Credit Card Fraud Dataset
 
--LIME Documentation
+- LIME Documentation
 
--XGBoost & scikit-learn documentation
+- XGBoost & scikit-learn documentation
 
 
 
